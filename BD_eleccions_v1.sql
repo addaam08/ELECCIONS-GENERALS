@@ -1,7 +1,7 @@
 CREATE DATABASE eleccions_generals;
 
 CREATE TABLE comunitats_autonomes (
-	comunitat_aut_id	TINYINT UNSIGNED AUTO_INCREMENT,
+    comunitat_aut_id	TINYINT UNSIGNED AUTO_INCREMENT,
     nom 				VARCHAR(45),
     codi_ine			CHAR(2) NOT NULL,
     CONSTRAINT pk_comunitats_autonomes PRIMARY KEY (comunitat_aut_id),
