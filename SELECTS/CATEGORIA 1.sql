@@ -1,12 +1,7 @@
 
 /* Mostra quants homes i quantes dones hi han en la BD */ 
-SELECT COUNT(*) AS Dones
-	FROM persones
-		WHERE sexe = 'F'
-UNION
-SELECT COUNT(*) AS Homes
-	FROM persones
-		WHERE sexe = 'M';
+SELECT SUM(sexe = 'M') AS Homes , SUM(sexe = 'F') AS Dones
+	FROM persones;
 
 
 /* Mostra el municipi amb mes vots de tots */
