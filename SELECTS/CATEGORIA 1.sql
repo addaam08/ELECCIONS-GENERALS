@@ -23,9 +23,9 @@ SELECT nom, cognom1, timestampdiff(YEAR,data_naixement,CURDATE()) AS edat
         
 
 /* Mostra el nom, el cognom i la data_naixement de les persones el nom dels continguin 2 vocals seguidas*/ 
-	SELECT COUNT(*) quants
-		FROM jugadors j 
-			  WHERE nom_complet RLIKE '[aeiou]{2}';
+	SELECT nom, cognom1, data_naixement
+		FROM persones 
+			  WHERE nom RLIKE '[aeiou]{3}';
         
 
 
