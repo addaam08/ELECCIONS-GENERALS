@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS eleccions_generals;
+
 CREATE DATABASE eleccions_generals;
 
 CREATE TABLE comunitats_autonomes (
